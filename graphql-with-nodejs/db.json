@@ -1,0 +1,60 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Mathieu",
+      "age": 26,
+      "companyId": "1",
+      "jobId": "1"
+    },
+    {
+      "id": "2",
+      "name": "Sarah",
+      "age": 25,
+      "companyId": "2",
+      "jobId": "3"
+    },
+    {
+      "id": "3",
+      "name": "Alice",
+      "age": 24,
+      "companyId": "3",
+      "jobId": "1"
+    },
+    {
+      "id": "4",
+      "name": "Bob",
+      "age": 32,
+      "companyId": "2",
+      "jobId": "2"
+    }
+  ],
+  "companies": [
+    {
+      "id": "1",
+      "name": "Apple"
+    },
+    {
+      "id": "2",
+      "name": "Google"
+    },
+    {
+      "id": "3",
+      "name": "Microsoft"
+    }
+  ],
+  "jobs": [
+    {
+      "id": "1",
+      "name": "DevOps"
+    },
+    {
+      "id": "2",
+      "name": "Backend Developer"
+    },
+    {
+      "id": "3",
+      "name": "Full stack Developer"
+    }
+  ]
+}
