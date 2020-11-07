@@ -20,6 +20,13 @@ const resolvers = {
             .then((response) => response.data),
         company:(_, { id }) => axios.get(api+ `/companies/${id}`)
             .then((response) => response.data),
+    },
+
+    User: {
+        job: (user) => axios.get(api+ `/jobs/${user.jobId}`)
+                .then((response) => response.data),
+        company: (user) => axios.get(api+ `/companies/${user.companyId}`)
+            .then((response) => response.data)
     }
 };
 
