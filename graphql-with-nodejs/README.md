@@ -205,3 +205,12 @@ Autres alternatives de création de schema, type, query et mutation sans passer 
 qui est une extension de `graphql`.
 il suffit d'utiliser simplement les fonctionnalités de `graphql`. 
 [voir exemple sur GitHub ](https://github.com/Bkake/react-graphql-intro)
+
+# Client GraphQL
+  - GraphiQL http://localhost:8080/codeWorksGraphQL est activé dans l'application
+  - [Firecamp](https://firecamp.io/)
+  - Postman
+  - Clients React
+    - [AppoloGraphQL](https://www.apollographql.com/)
+    - [Relay](https://relay.dev/)
+         
