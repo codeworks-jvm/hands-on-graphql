@@ -27,7 +27,18 @@ const resolvers = {
                 .then((response) => response.data),
         company: (user) => axios.get(api+ `/companies/${user.companyId}`)
             .then((response) => response.data)
+    },
+
+    Job: {
+        users: (job) => axios.get(api+ `/jobs/${job.id}/users`)
+            .then((response) => response.data)
+    },
+
+    Company: {
+        users: (company) => axios.get(api+ `/companies/${company.id}/users`)
+            .then((response) => response.data),
     }
+
 };
 
 const schema = makeExecutableSchema({
