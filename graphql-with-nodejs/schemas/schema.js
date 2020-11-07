@@ -37,6 +37,21 @@ const resolvers = {
     Company: {
         users: (company) => axios.get(api+ `/companies/${company.id}/users`)
             .then((response) => response.data),
+    },
+
+    Mutation: {
+         addUser: (_, { id, name, age, jobId, companyId }) => {
+             return axios.post(api +'/users',
+                 {id: id, name: name, age: age, jobId: jobId, companyId: companyId })
+                 .then((response) => response.data);
+         },
+         updateUser: (_, { id, name, age, jobId, companyId }) => {
+                return axios.put(api +`/users/${id}`,
+                    {id: id, name: name, age: age, jobId: jobId, companyId: companyId })
+                    .then((response) => response.data);
+         },
+        deleteUser: (_, { id })  =>
+            axios.delete(api +`/users/${id}`).then((response) => true)
     }
 
 };
