@@ -127,7 +127,7 @@
    
  Cela nous permet de récupérer un utilisateur avec son job ou company si on le souhaite 
  
- ``` json 
+ ```graphQL 
  query{
    user(id: "1"){
      id
